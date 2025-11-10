@@ -1,18 +1,4 @@
-# Weather Emergency Prediction System
-## Rostov-on-Don Region
 
-Production-ready ML system for predicting weather-related emergencies using 30 years of historical data.
-
-## 🌟 Features
-
-- **30 Years of Data**: Weather and emergency data for Rostov-on-Don (2015-2045)
-- **ML Models**: Random Forest, Gradient Boosting, and Logistic Regression
-- **FastAPI Backend**: 5 REST API endpoints
-- **Gradio Web Interface**: Interactive dashboard
-- **Docker Support**: Containerized deployment
-- **Comprehensive Testing**: Unit and integration tests
-
-## 📊 Google Colab Notebooks
 
 For easy access and execution, use these Google Colab notebooks:
 
@@ -184,7 +170,6 @@ Models are evaluated on:
 
 ## 🌍 Location
 
-**Rostov-on-Don, Russia**
 - Latitude: 47.2357°N
 - Longitude: 39.7015°E
 - Region: Southern Federal District
@@ -233,7 +218,6 @@ Iskandar - Weather Emergency Prediction System
 ## 🙏 Acknowledgments
 
 - Weather data sources
-- Rostov-on-Don meteorological services
 - Machine learning community
 
 ## 📞 Support
