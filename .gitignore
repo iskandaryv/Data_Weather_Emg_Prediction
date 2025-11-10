@@ -60,7 +60,7 @@ logs/
 
 # Jupyter
 .ipynb_checkpoints/
-*.ipynb
+# *.ipynb  # Allow notebooks to be committed
 
 # OS
 .DS_Store
