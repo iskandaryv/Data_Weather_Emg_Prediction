@@ -1,12 +1,12 @@
 """
-Generate sample Excel file with Rostov-on-Don weather data and geodata.
+Generate sample Excel file with Russian region weather data and geodata.
 Standalone script - no dependencies on other modules.
 """
 import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
 
-# Rostov-on-Don Districts
+# Russian Region Districts
 ROSTOV_DISTRICTS = {
     "Leninsky": {"name": "Leninsky District", "name_ru": "Ленинский район", "lat": 47.2220, "lon": 39.7180},
     "Kirovsky": {"name": "Kirovsky District", "name_ru": "Кировский район", "lat": 47.2580, "lon": 39.7850},
@@ -19,7 +19,7 @@ ROSTOV_DISTRICTS = {
 }
 
 print("=" * 70)
-print("GENERATING SAMPLE EXCEL FILE WITH ROSTOV GEODATA")
+print("GENERATING SAMPLE EXCEL FILE WITH REGION GEODATA")
 print("=" * 70)
 
 # Generate weather data
@@ -66,7 +66,7 @@ for i in range(365):  # One year
 df = pd.DataFrame(data)
 
 # Save to Excel
-filename = "sample_rostov_weather.xlsx"
+filename = "sample_weather.xlsx"
 df.to_excel(filename, index=False, sheet_name="Weather Data")
 
 print(f"\n✅ SUCCESS! Generated Excel file: {filename}")
@@ -93,5 +93,5 @@ summary = df.groupby(['district', 'district_ru']).agg({
 print(summary)
 
 print("\n✅ You can now use this Excel file in the dashboard!")
-print("   Run: python rostov_dashboard.py")
+print("   Run: python dashboard.py")
 print("=" * 70)

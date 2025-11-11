@@ -1,5 +1,5 @@
 """
-Rostov-on-Don Interactive Dashboard with Districts and Places.
+Russian Region Interactive Dashboard with Districts and Places.
 """
 import gradio as gr
 import pandas as pd
@@ -16,7 +16,7 @@ from pathlib import Path
 # Add src to path
 sys.path.insert(0, str(Path(__file__).parent))
 
-from src.utils.rostov_data import (
+from src.utils.region_data import (
     ROSTOV_CENTER,
     ROSTOV_DISTRICTS,
     get_rostov_districts_dataframe,

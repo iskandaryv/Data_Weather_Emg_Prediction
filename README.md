@@ -87,7 +87,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
 # Run Gradio dashboard
-python rostov_dashboard.py
+python dashboard.py
 ```
 
 Dashboard will open at: **http://localhost:7860**
@@ -136,7 +136,7 @@ Data_Weather_Emg_Prediction/
 │   ├── utils/                       # Utilities and configuration
 │   │   ├── outlier_detection.py    # Outlier detection module
 │   │   ├── geo_utils.py            # GeoPandas utilities
-│   │   ├── rostov_data.py          # Region data
+│   │   ├── region_data.py          # Region data
 │   │   └── config.py               # Configuration
 │   └── web/                         # Gradio web interface
 ├── data/
@@ -145,8 +145,8 @@ Data_Weather_Emg_Prediction/
 │   └── external/                    # External data sources
 ├── models/                          # Trained models (.pkl)
 ├── tests/                           # Test suite
-├── rostov_dashboard.py              # Standalone Gradio dashboard
-├── generate_rostov_excel.py         # Sample data generator
+├── dashboard.py                     # Standalone Gradio dashboard
+├── generate_sample_data.py          # Sample data generator
 ├── main.py                          # Main entry point
 ├── requirements.txt                 # Python dependencies
 ├── setup.sh                         # Setup script
@@ -249,10 +249,10 @@ python main.py api
 python main.py web
 
 # Run dashboard
-python rostov_dashboard.py
+python dashboard.py
 
 # Generate sample data
-python generate_rostov_excel.py
+python generate_sample_data.py
 
 # Run everything (train + API + web)
 python main.py all
