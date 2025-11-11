@@ -29,15 +29,15 @@ API_HOST = os.getenv("API_HOST", "127.0.0.1")  # localhost only
 API_PORT = int(os.getenv("API_PORT", 8000))
 API_WORKERS = int(os.getenv("API_WORKERS", 1))
 
-# Google Maps API for Russia
+# Google Maps API
 GOOGLE_MAPS_API_KEY = os.getenv("GOOGLE_MAPS_API_KEY", "")
 
 # CORS for localhost
 CORS_ORIGINS = ["http://localhost:3000", "http://localhost:7860", "http://127.0.0.1:8000"]
 
-# Default Geographic Coordinates (can be configured)
+# Default Geographic Coordinates (configurable via environment variables)
 DEFAULT_GEO_LOCATION = {
-    "lat": float(os.getenv("GEO_LAT", "47.2357")),  # Rostov-on-Don default
+    "lat": float(os.getenv("GEO_LAT", "47.2357")),
     "lon": float(os.getenv("GEO_LON", "39.7015")),
     "name": os.getenv("GEO_NAME", "Region"),
     "country": os.getenv("GEO_COUNTRY", "Russia")

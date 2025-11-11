@@ -1,19 +1,19 @@
 """
-Rostov-on-Don specific geographic data and districts.
+Russian region geographic data and districts.
 """
 from typing import Dict, List
 import pandas as pd
 import geopandas as gpd
 from shapely.geometry import Point, Polygon
 
-# Rostov-on-Don city center
+# Region city center
 ROSTOV_CENTER = {
     "lat": 47.2357,
     "lon": 39.7015,
-    "name": "Rostov-on-Don City Center"
+    "name": "City Center"
 }
 
-# Rostov-on-Don Districts with approximate boundaries
+# Districts with approximate boundaries
 ROSTOV_DISTRICTS = {
     "Leninsky": {
         "name": "Leninsky District",
